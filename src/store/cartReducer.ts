@@ -3,10 +3,10 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 const initialState: Cart[] = [];
 
 const cartSlice = createSlice({
-  name: "todos",
+  name: "cart",
   initialState,
   reducers: {
-    addTodo(state, action: PayloadAction<Cart>) {
+    addToCart(state, action: PayloadAction<Cart>) {
       state.push(action.payload);
     },
     // toggleTodo(state, action: PayloadAction<Cart>) {
