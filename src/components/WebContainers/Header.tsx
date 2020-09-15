@@ -8,7 +8,7 @@ const Header = () => {
   const cart = useSelector((state: RootState) => state.cart);
   return (
     <div>
-      <nav className="navbar navbar-expand-sm navbar-light bg-light">
+      <nav className="navbar shadow navbar-expand-sm navbar-light bg-light">
         <Link className="navbar-brand w-100 text-center" to="/">
           <h2 className="text-styled">JazzShop</h2>
         </Link>

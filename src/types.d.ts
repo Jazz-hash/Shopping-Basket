@@ -13,6 +13,6 @@ interface CartItem {
 }
 
 interface Cart {
-  id: string;
-  cartItems: CartItem[];
+  product: Product;
+  quantity: Number;
 }

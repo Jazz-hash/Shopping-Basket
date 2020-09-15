@@ -2,8 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="page-footer font-small bg-light pt-4">
-      <div className="container-fluid text-center text-md-left">
+    <footer className="page-footer shadow-lg font-small bg-light pt-4">
+      <div className="container text-center text-md-left">
+        <br />
         <div className="row">
           <div className="col-md-6 mt-md-0 mt-3">
             <h3 className="text-styled mb-1 pb-3">JazzShop</h3>

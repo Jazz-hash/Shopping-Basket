@@ -12,7 +12,7 @@ const Layout: React.FC<Props> = ({ children }) => {
       <header style={{ padding: "30px 40px" }}>
         <Header />
       </header>
-      <section>{children}</section>
+      <section className="container">{children}</section>
       <footer>
         <Footer />
       </footer>
