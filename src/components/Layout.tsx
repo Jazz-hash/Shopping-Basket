@@ -9,7 +9,7 @@ interface Props {
 const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <header>
+      <header style={{ padding: "30px 40px" }}>
         <Header />
       </header>
       <section>{children}</section>
