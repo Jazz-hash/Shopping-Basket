@@ -31,7 +31,7 @@ const Header = () => {
                 <p
                   style={{ position: "absolute", right: 16, zIndex: 1, top: 0 }}
                 >
-                  {/* <span className="badge badge-danger ">{cart.length}</span> */}
+                  <span className="badge badge-danger ">{cart.length}</span>
                 </p>
               </button>
             </NavLink>

@@ -9,13 +9,15 @@ interface Props {
 const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <header style={{ padding: "30px 40px" }}>
-        <Header />
-      </header>
-      <section className="container">{children}</section>
-      <footer>
-        <Footer />
-      </footer>
+      <div className="main">
+        <header style={{ padding: "30px 40px" }}>
+          <Header />
+        </header>
+        <section className="container-fluid m-0 p-0">{children}</section>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
     </>
   );
 };

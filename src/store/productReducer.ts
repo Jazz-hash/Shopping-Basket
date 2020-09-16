@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState: Product[] = [
   {
@@ -37,5 +37,5 @@ const productSlice = createSlice({
   reducers: {},
 });
 
-export const {} = productSlice.actions;
+// export const {} = productSlice.actions;
 export default productSlice.reducer;
