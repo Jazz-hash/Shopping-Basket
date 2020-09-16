@@ -8,14 +8,17 @@ import { addToCart } from "../../store/cartReducer";
 const ProductItemDetail = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const [product, setProduct] = useState<Product>();
   const [btnText, setBtnText] = useState("Add To Cart");
 
-  const tempData = setProduct(
-    useSelector((state: RootState) =>
-      state.product.find((product) => product.id === Number(id))
-    )
+  const product = useSelector((state: RootState) =>
+    state.product.find((product) => product.id === Number(id))
   );
+  const cart = useSelector((state: RootState) => state.cart);
+  // const isInCart = (product: Product) => {
+  //   return !!cart.find((items) =>
+  //     items.product.map((item) => item.id === product.id)
+  //   );
+  // };
 
   return (
     <Layout>
@@ -29,7 +32,7 @@ const ProductItemDetail = () => {
           <p>Description: {product?.details}</p>
           <button
             type="button"
-            onClick={() => dispatch(addToCart(product))}
+            onClick={() => (product ? dispatch(addToCart(product)) : null)}
             className="mt-3 btn-lg btn btn-danger w-100"
           >
             {btnText}
