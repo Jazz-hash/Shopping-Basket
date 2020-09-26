@@ -7,10 +7,13 @@ interface Product {
 }
 
 interface CartItem {
-  quantity: number;
+  id: string;
+  quantity: Number;
   product: Product;
 }
 
 interface Cart {
-  products: CartItem[];
+  id: string;
+  quantity: number;
+  products: Product[];
 }

@@ -15,7 +15,7 @@ const ProductItemDetail = () => {
   const cart = useSelector((state: RootState) => state.cart);
   const isInCart = (product: Product) => {
     return !!cart.find((items) =>
-      items.products.find((item) => item.product.id === product.id)
+      items.products.find((item) => item.id === product.id)
     );
   };
 
